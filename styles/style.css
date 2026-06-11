@@ -33,7 +33,7 @@ body{
 }
 .header__menu__link{
     font-family: var(--fuente-montserrat);
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: 600;
     color: #F6F6F6;
     text-decoration: none;
@@ -59,7 +59,7 @@ body{
 
 
 .presentacion__contenido__titulo{
-    font-size: 2.25rem;
+    font-size: 2.00rem;
     font-family: var(--fuente-krona);
 }
 
@@ -68,7 +68,7 @@ body{
 }
 
 .presentacion__contenido__texto{
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-family: var(--fuente-krona);
 }
 
@@ -110,6 +110,66 @@ body{
     width: 50%;
 }
 
+.badges {
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.badges__contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.badges__titulo {
+    font-family: var(--fuente-krona);
+    font-size: 2rem;
+    color: #F6F6F6;
+}
+
+.badges__texto {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.125rem;
+    color: var(--color-secundario);
+    max-width: 60ch;
+}
+
+.badges__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.badge-card {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border: 2px solid var(--color-terciario);
+    border-radius: 12px;
+    background: rgba(4, 24, 50, 0.35);
+}
+
+.badge-card__imagen {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.badge-card__nombre {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F6F6F6;
+    text-align: center;
+}
+
 .footer{
     color: var(--color-primario);
     background-color: var(--color-terciario);
@@ -132,5 +192,14 @@ body{
     }
     .presentacion__contenido{
         width: 100%;
+    }
+
+    .badges {
+        padding: 10%;
+    }
+
+    .badge-card {
+        width: 100%;
+        max-width: 220px;
     }
 }
